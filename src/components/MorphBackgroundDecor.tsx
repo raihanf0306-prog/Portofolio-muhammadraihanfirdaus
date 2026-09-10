@@ -15,23 +15,23 @@ export const MorphBackgroundDecor: React.FC<MorphBackgroundDecorProps> = ({
         className={`absolute inset-0 overflow-hidden pointer-events-none select-none z-0 ${className}`}
         aria-hidden="true"
       >
-        {/* Primary Electric Blue Morph Blob */}
+        {/* Layer 1: Electric Blue Organic Aurora Form */}
         <div
-          className="absolute -top-24 -left-20 w-[480px] sm:w-[620px] h-[480px] sm:h-[620px] rounded-full bg-gradient-to-tr from-blue-600/20 via-indigo-600/15 to-cyan-400/10 blur-[90px] animate-morph-blob-1"
+          className="absolute -top-32 -left-24 w-[520px] sm:w-[680px] h-[520px] sm:h-[680px] rounded-full bg-gradient-to-tr from-[#3B82F6]/25 via-[#6366F1]/20 to-[#22D3EE]/15 blur-[100px] animate-liquid-shift"
         />
 
-        {/* Secondary Violet Morph Blob */}
+        {/* Layer 2: Deep Violet / Indigo Fluid Glow */}
         <div
-          className="absolute top-1/4 right-[-10%] w-[420px] sm:w-[580px] h-[420px] sm:h-[580px] rounded-full bg-gradient-to-br from-violet-600/20 via-purple-600/15 to-blue-500/10 blur-[100px] animate-morph-blob-2"
+          className="absolute top-1/4 -right-20 w-[450px] sm:w-[620px] h-[450px] sm:h-[620px] rounded-full bg-gradient-to-bl from-[#8B5CF6]/25 via-[#60A5FA]/15 to-transparent blur-[110px] animate-liquid-pulse"
         />
 
-        {/* Accent Cyan & Soft Lavender Floating Glow */}
+        {/* Layer 3: Cyan Accent Specular Bloom */}
         <div
-          className="absolute -bottom-32 left-1/3 w-[360px] sm:w-[500px] h-[360px] sm:h-[500px] rounded-full bg-gradient-to-tl from-cyan-500/15 via-blue-600/10 to-indigo-500/15 blur-[85px] animate-morph-blob-3"
+          className="absolute -bottom-28 left-1/4 w-[380px] sm:w-[540px] h-[380px] sm:h-[540px] rounded-full bg-gradient-to-tl from-[#22D3EE]/18 via-[#3B82F6]/15 to-[#8B5CF6]/15 blur-[95px] animate-pulse-glow"
         />
 
-        {/* Subtle mesh dot overlay for texture */}
-        <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:24px_24px] opacity-40" />
+        {/* Subtle geometric dot grid matrix for futuristic texture */}
+        <div className="absolute inset-0 bg-[radial-gradient(rgba(248,250,252,0.04)_1px,transparent_1px)] [background-size:32px_32px] opacity-50" />
       </div>
     );
   }
@@ -42,7 +42,7 @@ export const MorphBackgroundDecor: React.FC<MorphBackgroundDecorProps> = ({
         className={`absolute inset-0 overflow-hidden pointer-events-none select-none z-0 ${className}`}
         aria-hidden="true"
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-indigo-600/10 rounded-full blur-[110px] animate-pulse-glow" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[380px] bg-[#6366F1]/12 rounded-full blur-[120px] animate-pulse-glow" />
       </div>
     );
   }
@@ -54,11 +54,12 @@ export const MorphBackgroundDecor: React.FC<MorphBackgroundDecorProps> = ({
       aria-hidden="true"
     >
       <div
-        className="absolute top-0 right-10 w-[380px] sm:w-[480px] h-[380px] sm:h-[480px] rounded-full bg-gradient-to-br from-blue-600/10 via-violet-600/10 to-transparent blur-[90px] animate-morph-blob-2"
+        className="absolute -top-16 -right-16 w-[420px] sm:w-[520px] h-[420px] sm:h-[520px] rounded-full bg-gradient-to-br from-[#3B82F6]/15 via-[#8B5CF6]/12 to-transparent blur-[100px] animate-liquid-pulse"
       />
       <div
-        className="absolute bottom-10 left-5 w-[320px] sm:w-[420px] h-[320px] sm:h-[420px] rounded-full bg-gradient-to-tr from-cyan-600/10 via-indigo-600/10 to-transparent blur-[85px] animate-morph-blob-1"
+        className="absolute -bottom-16 -left-16 w-[360px] sm:w-[460px] h-[360px] sm:h-[460px] rounded-full bg-gradient-to-tr from-[#22D3EE]/15 via-[#6366F1]/12 to-transparent blur-[95px] animate-liquid-shift"
       />
     </div>
   );
 };
+

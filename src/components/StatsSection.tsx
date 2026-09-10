@@ -95,37 +95,37 @@ export const StatsSection: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
-            className="group relative p-6 rounded-3xl morph-card hover:border-cyan-400/40 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden"
+            className="group relative p-6 rounded-3xl morph-card hover:border-[#22D3EE]/40 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden"
           >
             {/* Top row with icon */}
             <div className="flex items-center justify-between mb-4">
-              <div className="p-2.5 rounded-2xl bg-slate-900/70 border border-white/[0.08] backdrop-blur-md group-hover:border-cyan-400/40 transition-colors shadow-sm">
+              <div className="p-2.5 rounded-2xl bg-[#071329]/80 border border-white/[0.08] backdrop-blur-md group-hover:border-[#22D3EE]/40 transition-colors shadow-sm">
                 {getIcon(stat.id)}
               </div>
-              <span className="text-[11px] font-mono font-semibold text-cyan-400/80 uppercase tracking-wider">
+              <span className="text-[11px] font-mono font-semibold text-[#22D3EE]/90 uppercase tracking-wider">
                 0{idx + 1}
               </span>
             </div>
 
             {/* Stat value */}
-            <div className="text-3xl sm:text-4xl font-black text-white tracking-tight group-hover:text-cyan-200 transition-colors">
+            <div className="text-3xl sm:text-4xl font-black text-[#F8FAFC] tracking-tight group-hover:text-[#22D3EE] transition-colors">
               {getDisplayValue(stat)}
             </div>
 
             {/* Label */}
-            <h4 className="mt-2 text-sm sm:text-base font-bold text-slate-100">
+            <h4 className="mt-2 text-sm sm:text-base font-bold text-[#F8FAFC]">
               {stat.label}
             </h4>
 
             {/* Sublabel */}
             {stat.sublabel && (
-              <p className="mt-1 text-xs text-slate-400 leading-relaxed font-normal">
+              <p className="mt-1 text-xs text-[#94A3B8] leading-relaxed font-normal">
                 {stat.sublabel}
               </p>
             )}
 
             {/* Subtle bottom line accent */}
-            <div className="absolute bottom-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-cyan-400/20 group-hover:via-cyan-400/60 to-transparent transition-all" />
+            <div className="absolute bottom-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-[#22D3EE]/30 group-hover:via-[#22D3EE]/70 to-transparent transition-all" />
           </motion.div>
         ))}
       </div>

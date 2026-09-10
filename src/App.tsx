@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CinematicIntro } from './components/CinematicIntro';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { StatsSection } from './components/StatsSection';
@@ -12,8 +13,25 @@ import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
 export default function App() {
+  const [showIntro, setShowIntro] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return !sessionStorage.getItem('mrf_intro_seen');
+    }
+    return true;
+  });
+
+  const handleIntroComplete = () => {
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem('mrf_intro_seen', 'true');
+    }
+    setShowIntro(false);
+  };
+
   return (
-    <div className="min-h-screen bg-[#070A13] text-slate-100 flex flex-col font-sans selection:bg-indigo-600 selection:text-white relative bg-morph-mesh">
+    <div className="min-h-screen bg-[#020617] text-[#F8FAFC] flex flex-col font-sans selection:bg-[#3B82F6] selection:text-white relative bg-morph-mesh">
+      {/* Cinematic Tech Intro (Only on initial load) */}
+      {showIntro && <CinematicIntro onComplete={handleIntroComplete} />}
+
       {/* Sticky Top Navigation */}
       <Navbar />
 
@@ -52,3 +70,4 @@ export default function App() {
     </div>
   );
 }
+

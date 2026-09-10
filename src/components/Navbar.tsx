@@ -64,7 +64,7 @@ export const Navbar: React.FC = () => {
       id="main-navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#070A13]/75 backdrop-blur-xl border-b border-white/[0.08] shadow-2xl shadow-black/40 py-3.5'
+          ? 'bg-[#020617]/80 backdrop-blur-2xl border-b border-white/[0.08] shadow-2xl shadow-black/70 py-3.5'
           : 'bg-transparent py-5'
       }`}
     >
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-white group"
           >
             <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-blue-500 to-violet-500 opacity-60 blur-xs group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-[#3B82F6] to-[#8B5CF6] opacity-60 blur-xs group-hover:opacity-100 transition-opacity" />
               <img
                 src={photo}
                 alt="Muhammad Raihan Firdaus"
@@ -89,14 +89,14 @@ export const Navbar: React.FC = () => {
                 className="relative w-8 h-8 rounded-full object-cover object-top border border-white/20 shadow-sm"
               />
             </div>
-            <div className="flex items-center gap-1.5">
-              <span className="text-white font-extrabold tracking-tight group-hover:text-blue-200 transition-colors">MRF</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:scale-125 transition-all inline-block shadow-xs shadow-cyan-400"></span>
+            <div className="flex items-baseline gap-1">
+              <span className="text-[#F8FAFC] font-black text-xl tracking-tight group-hover:text-[#60A5FA] transition-colors">MRF</span>
+              <span className="w-1.5 h-1.5 bg-[#3B82F6] rounded-[1px] shadow-[0_0_8px_rgba(59,130,246,0.9)] inline-block align-baseline group-hover:scale-125 transition-transform" />
             </div>
           </a>
 
           {/* Desktop Nav Items */}
-          <nav className="hidden lg:flex items-center gap-1 p-1.5 rounded-full bg-slate-900/50 border border-white/[0.08] backdrop-blur-md shadow-lg shadow-black/20">
+          <nav className="hidden lg:flex items-center gap-1 p-1.5 rounded-full bg-[#071329]/70 border border-white/[0.08] backdrop-blur-md shadow-lg shadow-black/40">
             {navItems.map((item) => {
               const isActive = activeSection === item.href.substring(1);
               return (
@@ -105,10 +105,10 @@ export const Navbar: React.FC = () => {
                   id={`nav-link-${item.label.toLowerCase()}`}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className={`px-4 py-1.5 text-xs tracking-wide uppercase font-semibold rounded-full transition-all duration-250 ${
+                  className={`px-4 py-1.5 text-xs tracking-wide uppercase font-semibold rounded-full transition-all duration-200 ${
                     isActive
-                      ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 text-white shadow-md shadow-indigo-500/30'
-                      : 'text-slate-300 hover:text-white hover:bg-white/[0.06]'
+                      ? 'bg-[#3B82F6] text-white shadow-md shadow-[#3B82F6]/40'
+                      : 'text-[#94A3B8] hover:text-white hover:bg-white/[0.06]'
                   }`}
                 >
                   {item.label}
@@ -138,7 +138,7 @@ export const Navbar: React.FC = () => {
             type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle navigation menu"
-            className="lg:hidden p-2.5 rounded-2xl bg-slate-900/60 border border-white/[0.08] text-slate-300 hover:text-white hover:bg-slate-800/80 transition-colors backdrop-blur-md"
+            className="lg:hidden p-2.5 rounded-2xl bg-[#071329]/80 border border-white/[0.08] text-[#94A3B8] hover:text-white hover:bg-slate-800/80 transition-colors backdrop-blur-md"
           >
             {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -148,7 +148,7 @@ export const Navbar: React.FC = () => {
         {isMobileMenuOpen && (
           <div
             id="mobile-dropdown-menu"
-            className="lg:hidden mt-3 p-4 rounded-3xl bg-[#0B1120]/90 border border-white/[0.1] backdrop-blur-2xl shadow-2xl shadow-black/70 animate-in fade-in slide-in-from-top-3 duration-200"
+            className="lg:hidden mt-3 p-4 rounded-3xl bg-[#071329]/95 border border-white/[0.12] backdrop-blur-2xl shadow-2xl shadow-black/80 animate-in fade-in slide-in-from-top-3 duration-200"
           >
             <div className="flex flex-col gap-1.5">
               {navItems.map((item) => {
@@ -160,8 +160,8 @@ export const Navbar: React.FC = () => {
                     onClick={(e) => handleNavClick(e, item.href)}
                     className={`px-4 py-2.5 rounded-2xl text-sm font-medium transition-all ${
                       isActive
-                        ? 'bg-gradient-to-r from-blue-600/30 to-violet-600/30 text-blue-300 border border-blue-500/30 font-semibold'
-                        : 'text-slate-300 hover:text-white hover:bg-white/[0.05]'
+                        ? 'bg-[#3B82F6]/25 text-[#60A5FA] border border-[#3B82F6]/40 font-semibold'
+                        : 'text-[#94A3B8] hover:text-white hover:bg-white/[0.05]'
                     }`}
                   >
                     {item.label}
