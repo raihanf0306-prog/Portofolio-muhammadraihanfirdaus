@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Briefcase, FolderCheck, Share2, Laptop, ArrowRight } from 'lucide-react';
-import { CAREER_INTERESTS, PERSONAL_INFO } from '../data/portfolioData';
+import { Briefcase, FolderCheck, Share2, Laptop } from 'lucide-react';
+import { CAREER_INTERESTS } from '../data/portfolioData';
+import { MorphBackgroundDecor } from './MorphBackgroundDecor';
 
 export const CareerInterestSection: React.FC = () => {
   const getRoleIcon = (iconName: string) => {
@@ -11,7 +12,7 @@ export const CareerInterestSection: React.FC = () => {
       case 'FolderCheck':
         return <FolderCheck className="w-6 h-6 text-cyan-400" />;
       case 'Share2':
-        return <Share2 className="w-6 h-6 text-indigo-400" />;
+        return <Share2 className="w-6 h-6 text-violet-400" />;
       case 'Laptop':
         return <Laptop className="w-6 h-6 text-emerald-400" />;
       default:
@@ -22,19 +23,22 @@ export const CareerInterestSection: React.FC = () => {
   return (
     <section
       id="career-interest"
-      className="relative py-20 sm:py-28 bg-[#020617] text-slate-100 border-t border-slate-900 overflow-hidden"
+      className="relative py-20 sm:py-28 bg-[#070B18] text-slate-100 border-t border-white/[0.06] overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Morph background blobs */}
+      <MorphBackgroundDecor variant="subtle" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-900/60 border border-blue-500/40 text-blue-300 text-xs font-bold tracking-wider uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-bold tracking-wider uppercase mb-3 backdrop-blur-md">
             CAREER OPPORTUNITIES
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Currently Open For
           </h2>
-          <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+          <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
             Saya terbuka untuk kesempatan bekerja dan berkolaborasi dalam lingkungan kerja yang memungkinkan saya menggunakan kemampuan administrasi, komunikasi, koordinasi, dan digital secara bersamaan.
           </p>
         </div>
@@ -48,25 +52,28 @@ export const CareerInterestSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="group p-6 rounded-3xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 shadow-xl shadow-black/20 backdrop-blur-xl flex flex-col justify-between transition-all duration-200 hover:-translate-y-1"
+              className="group p-6 rounded-3xl morph-card hover:border-cyan-400/40 shadow-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
             >
               <div>
-                <div className="p-3.5 rounded-2xl bg-slate-950 border border-slate-800 w-fit mb-5 group-hover:border-blue-500/40 transition-colors">
+                <div className="p-3.5 rounded-2xl bg-slate-900/70 border border-white/[0.08] backdrop-blur-md w-fit mb-5 group-hover:border-cyan-400/40 transition-colors shadow-sm">
                   {getRoleIcon(item.icon)}
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-cyan-200 transition-colors">
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
                   {item.desc}
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-blue-400 font-semibold">
+              <div className="mt-6 pt-4 border-t border-white/[0.08] flex items-center justify-between text-xs text-cyan-400 font-bold uppercase tracking-wider">
                 <span>Available</span>
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="flex h-2.5 w-2.5 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500"></span>
+                </span>
               </div>
             </motion.div>
           ))}

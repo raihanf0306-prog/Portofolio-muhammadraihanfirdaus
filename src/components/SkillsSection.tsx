@@ -21,6 +21,7 @@ import {
   Briefcase
 } from 'lucide-react';
 import { SKILL_CATEGORIES } from '../data/portfolioData';
+import { MorphBackgroundDecor } from './MorphBackgroundDecor';
 
 export const SkillsSection: React.FC = () => {
   // Helper to get matching icons for specific skills
@@ -82,7 +83,7 @@ export const SkillsSection: React.FC = () => {
       case 'digital-skills':
         return <Laptop className="w-6 h-6 text-cyan-400" />;
       case 'soft-skills':
-        return <Users2 className="w-6 h-6 text-indigo-400" />;
+        return <Users2 className="w-6 h-6 text-violet-400" />;
       default:
         return <Briefcase className="w-6 h-6 text-blue-400" />;
     }
@@ -91,19 +92,22 @@ export const SkillsSection: React.FC = () => {
   return (
     <section
       id="skills"
-      className="relative py-24 sm:py-32 bg-[#0B1120] text-slate-100 overflow-hidden"
+      className="relative py-24 sm:py-32 bg-[#090D1C] text-slate-100 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Morph background decoration */}
+      <MorphBackgroundDecor variant="subtle" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-900/50 border border-blue-600/40 text-blue-300 text-xs font-bold tracking-wider uppercase mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-xs font-bold tracking-wider uppercase mb-3 backdrop-blur-md">
             07 — CORE COMPETENCIES
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Skills & Capabilities
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-slate-400 leading-relaxed">
+          <p className="mt-3 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
             Kombinasi komprehensif antara ketelitian administrasi, keahlian media digital, dan keterampilan komunikasi interpersonal.
           </p>
         </div>
@@ -117,25 +121,25 @@ export const SkillsSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.15 }}
-              className="group p-8 rounded-3xl bg-slate-900/90 border border-slate-800 hover:border-blue-500/40 shadow-xl shadow-black/30 backdrop-blur-xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1"
+              className="group p-8 rounded-3xl morph-card hover:border-blue-500/40 shadow-2xl flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 relative overflow-hidden"
             >
               <div>
                 {/* Category Header Icon */}
                 <div className="flex items-center justify-between mb-6">
-                  <div className="p-3 rounded-2xl bg-slate-950 border border-slate-800 group-hover:border-blue-500/40 transition-colors">
+                  <div className="p-3 rounded-2xl bg-slate-900/60 border border-white/[0.08] backdrop-blur-md group-hover:border-cyan-500/40 transition-colors shadow-sm">
                     {getCategoryHeaderIcon(category.id)}
                   </div>
-                  <span className="text-xs font-mono font-semibold text-slate-500">
+                  <span className="text-xs font-mono font-semibold text-slate-400">
                     CAT 0{idx + 1}
                   </span>
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-blue-200 transition-colors">
+                <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-cyan-200 transition-colors">
                   {category.title}
                 </h3>
 
                 {category.description && (
-                  <p className="mt-2 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                  <p className="mt-2 text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
                     {category.description}
                   </p>
                 )}
@@ -145,9 +149,9 @@ export const SkillsSection: React.FC = () => {
                   {category.skills.map((skill) => (
                     <div
                       key={skill}
-                      className="flex items-center gap-3 p-3 rounded-xl bg-slate-950/60 border border-slate-800/70 group-hover:border-slate-800 hover:bg-slate-800/40 transition-all"
+                      className="flex items-center gap-3 p-3 rounded-2xl bg-slate-900/40 border border-white/[0.06] hover:border-white/[0.15] backdrop-blur-md transition-all"
                     >
-                      <div className="p-1.5 rounded-lg bg-slate-900">
+                      <div className="p-1.5 rounded-xl bg-slate-800/60 border border-white/[0.06]">
                         {getSkillIcon(skill)}
                       </div>
                       <span className="text-sm font-medium text-slate-200">
@@ -159,9 +163,9 @@ export const SkillsSection: React.FC = () => {
               </div>
 
               {/* Bottom tag indicator */}
-              <div className="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-500 font-medium">
+              <div className="mt-8 pt-4 border-t border-white/[0.08] flex items-center justify-between text-xs text-slate-400 font-medium">
                 <span>{category.skills.length} Key Competencies</span>
-                <span className="w-2 h-2 rounded-full bg-blue-500/60 group-hover:bg-blue-400 transition-colors" />
+                <span className="w-2 h-2 rounded-full bg-cyan-400 group-hover:bg-cyan-300 animate-pulse transition-colors" />
               </div>
             </motion.div>
           ))}

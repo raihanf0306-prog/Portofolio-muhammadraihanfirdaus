@@ -13,7 +13,7 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#020617] text-slate-100 flex flex-col font-sans selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-[#070A13] text-slate-100 flex flex-col font-sans selection:bg-indigo-600 selection:text-white relative bg-morph-mesh">
       {/* Sticky Top Navigation */}
       <Navbar />
 
