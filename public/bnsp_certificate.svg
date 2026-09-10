@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1130" width="800" height="1130">
+  <defs>
+    <!-- Paper Texture Gradient -->
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFBF8" />
+      <stop offset="50%" stop-color="#F7F5EE" />
+      <stop offset="100%" stop-color="#F3EFE6" />
+    </linearGradient>
+
+    <!-- Golden Metallic Gradient -->
+    <linearGradient id="garudaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9A6B1F" />
+      <stop offset="30%" stop-color="#D99B26" />
+      <stop offset="50%" stop-color="#FEE180" />
+      <stop offset="70%" stop-color="#D99B26" />
+      <stop offset="100%" stop-color="#7E5312" />
+    </linearGradient>
+
+    <!-- Border Ribbon Gradient -->
+    <linearGradient id="borderWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#462A14" />
+      <stop offset="25%" stop-color="#8F6235" />
+      <stop offset="50%" stop-color="#5C381A" />
+      <stop offset="75%" stop-color="#8F6235" />
+      <stop offset="100%" stop-color="#3D2410" />
+    </linearGradient>
+
+    <!-- Hologram Multicolored Metallic Reflection -->
+    <linearGradient id="holoShine" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#D1D5DB" />
+      <stop offset="15%" stop-color="#FEF08A" />
+      <stop offset="30%" stop-color="#86EFAC" />
+      <stop offset="45%" stop-color="#67E8F9" />
+      <stop offset="60%" stop-color="#93C5FD" />
+      <stop offset="75%" stop-color="#F472B6" />
+      <stop offset="90%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Detailed Official Garuda Pancasila Def -->
+    <g id="garudaOfficial">
+      <!-- 17 Golden Wing Feathers Left -->
+      <path d="M 0 -18 C -14 -32, -36 -28, -50 -10 C -42 -8, -32 -8, -26 4 C -38 0, -48 14, -38 28 C -26 22, -18 24, -14 30 C -22 36, -20 48, -4 44 C -2 40, -2 36, 0 34" fill="url(#garudaGold)" stroke="#6B4413" stroke-width="0.8" />
+      <!-- 17 Golden Wing Feathers Right -->
+      <path d="M 0 -18 C 14 -32, 36 -28, 50 -10 C 42 -8, 32 -8, 26 4 C 38 0, 48 14, 38 28 C 26 22, 18 24, 14 30 C 22 36, 20 48, 4 44 C 2 40, 2 36, 0 34" fill="url(#garudaGold)" stroke="#6B4413" stroke-width="0.8" />
+      
+      <!-- Tail Feathers (8) -->
+      <path d="M -12 36 C -18 52, -10 66, 0 68 C 10 66, 18 52, 12 36 Z" fill="url(#garudaGold)" stroke="#6B4413" stroke-width="0.7" />
+
+      <!-- Head with Golden Crown turning right -->
+      <circle cx="0" cy="-24" r="8" fill="url(#garudaGold)" stroke="#6B4413" stroke-width="0.7" />
+      <path d="M 0 -32 C 6 -32, 8 -24, 6 -20" fill="url(#garudaGold)" stroke="#6B4413" stroke-width="0.7" />
+      <!-- Golden Beak facing right -->
+      <polygon points="4,-26 14,-23 4,-20" fill="#B45309" stroke="#78350F" stroke-width="0.4" />
+      <circle cx="2" cy="-25" r="1" fill="#111827" />
+
+      <!-- Golden Talons holding ribbon -->
+      <ellipse cx="-16" cy="46" rx="4" ry="2.5" fill="#B45309" />
+      <ellipse cx="16" cy="46" rx="4" ry="2.5" fill="#B45309" />
+
+      <!-- White Ribbon with "BHINNEKA TUNGGAL IKA" -->
+      <path d="M -30 46 Q 0 52 30 46 L 28 53 Q 0 57 -28 53 Z" fill="#FFFFFF" stroke="#334155" stroke-width="0.8" />
+      <text x="0" y="52" font-family="'Times New Roman', serif" font-size="4" font-weight="bold" fill="#0F172A" text-anchor="middle" letter-spacing="0.4">BHINNEKA TUNGGAL IKA</text>
+
+      <!-- Center Heraldic Shield (Perisai Pancasila) -->
+      <path d="M -18 -12 L 18 -12 L 18 10 C 18 24, 0 32, 0 32 C 0 32, -18 24, -18 10 Z" fill="#B91C1C" stroke="#0F172A" stroke-width="1.4" />
+      <!-- White quadrants (top-right & bottom-left) -->
+      <path d="M 0 -12 L 18 -12 L 18 10 C 18 13.5, 17 17, 15.5 20 L 0 20 Z" fill="#F8FAFC" />
+      <path d="M -18 10 L 0 10 L 0 32 C 0 32, -18 24, -18 10 Z" fill="#F8FAFC" />
+      <!-- Dividing crossbar -->
+      <line x1="-18" y1="10" x2="18" y2="10" stroke="#0F172A" stroke-width="1.6" />
+      <line x1="0" y1="-12" x2="0" y2="32" stroke="#0F172A" stroke-width="1.6" />
+
+      <!-- Five Pancasila Emblems inside shield -->
+      <!-- Top Left: Banteng Head -->
+      <circle cx="-9" cy="-1" r="3.2" fill="#0F172A" />
+      <!-- Top Right: Beringin Tree -->
+      <circle cx="9" cy="-1" r="3.2" fill="#15803D" />
+      <!-- Bottom Left: Padi & Kapas -->
+      <ellipse cx="-9" cy="20" rx="3.5" ry="2" fill="#EAB308" />
+      <!-- Bottom Right: Rantai Emas -->
+      <circle cx="9" cy="20" r="3" fill="none" stroke="#CA8A04" stroke-width="1" />
+      <!-- Center: Golden Star on Black Shield -->
+      <rect x="-4.5" y="4.5" width="9" height="11" fill="#0F172A" rx="1" />
+      <polygon points="0,5.5 1.5,9 5,9 2.2,11 3.2,14 0,12 -3.2,14 -2.2,11 -5,9 -1.5,9" fill="#FBBF24" />
+    </g>
+  </defs>
+
+  <!-- Base Paper Texture -->
+  <rect x="0" y="0" width="800" height="1130" fill="url(#paperBg)" />
+
+  <!-- Security Guilloche Rosettes & Fine Lines -->
+  <g><ellipse cx="424" cy="470" rx="140" ry="60" transform="rotate(0 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="422.5526228988618" cy="478.20848343981606" rx="140" ry="60" transform="rotate(10 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="418.3850666348555" cy="485.4269026324769" rx="140" ry="60" transform="rotate(20 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="412" cy="490.7846096908265" rx="140" ry="60" transform="rotate(30 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="404.16755626400635" cy="493.635386072293" rx="140" ry="60" transform="rotate(40 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="395.83244373599365" cy="493.635386072293" rx="140" ry="60" transform="rotate(50 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="388" cy="490.7846096908265" rx="140" ry="60" transform="rotate(60 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="381.6149333651445" cy="485.4269026324769" rx="140" ry="60" transform="rotate(70 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="377.4473771011382" cy="478.20848343981606" rx="140" ry="60" transform="rotate(80 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="376" cy="470" rx="140" ry="60" transform="rotate(90 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="377.4473771011382" cy="461.79151656018394" rx="140" ry="60" transform="rotate(100 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="381.6149333651445" cy="454.5730973675231" rx="140" ry="60" transform="rotate(110 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="388" cy="449.2153903091735" rx="140" ry="60" transform="rotate(120 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="395.83244373599365" cy="446.364613927707" rx="140" ry="60" transform="rotate(130 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="404.1675562640063" cy="446.364613927707" rx="140" ry="60" transform="rotate(140 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="412" cy="449.2153903091735" rx="140" ry="60" transform="rotate(150 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="418.3850666348555" cy="454.5730973675231" rx="140" ry="60" transform="rotate(160 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /><ellipse cx="422.5526228988618" cy="461.79151656018394" rx="140" ry="60" transform="rotate(170 400 470)" fill="none" stroke="#C5A880" stroke-width="0.3" opacity="0.14" /></g>
+  <g><path d="M 50 80 Q 220 68 400 80 T 750 80" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 102 Q 220 90 400 102 T 750 102" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 124 Q 220 112 400 124 T 750 124" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 146 Q 220 134 400 146 T 750 146" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 168 Q 220 156 400 168 T 750 168" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 190 Q 220 178 400 190 T 750 190" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 212 Q 220 200 400 212 T 750 212" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 234 Q 220 222 400 234 T 750 234" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 256 Q 220 244 400 256 T 750 256" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 278 Q 220 266 400 278 T 750 278" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 300 Q 220 288 400 300 T 750 300" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 322 Q 220 310 400 322 T 750 322" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 344 Q 220 332 400 344 T 750 344" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 366 Q 220 354 400 366 T 750 366" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 388 Q 220 376 400 388 T 750 388" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 410 Q 220 398 400 410 T 750 410" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 432 Q 220 420 400 432 T 750 432" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 454 Q 220 442 400 454 T 750 454" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 476 Q 220 464 400 476 T 750 476" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 498 Q 220 486 400 498 T 750 498" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 520 Q 220 508 400 520 T 750 520" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 542 Q 220 530 400 542 T 750 542" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 564 Q 220 552 400 564 T 750 564" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 586 Q 220 574 400 586 T 750 586" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 608 Q 220 596 400 608 T 750 608" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 630 Q 220 618 400 630 T 750 630" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 652 Q 220 640 400 652 T 750 652" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 674 Q 220 662 400 674 T 750 674" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 696 Q 220 684 400 696 T 750 696" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 718 Q 220 706 400 718 T 750 718" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 740 Q 220 728 400 740 T 750 740" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 762 Q 220 750 400 762 T 750 762" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 784 Q 220 772 400 784 T 750 784" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 806 Q 220 794 400 806 T 750 806" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 828 Q 220 816 400 828 T 750 828" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 850 Q 220 838 400 850 T 750 850" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 872 Q 220 860 400 872 T 750 872" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 894 Q 220 882 400 894 T 750 894" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 916 Q 220 904 400 916 T 750 916" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 938 Q 220 926 400 938 T 750 938" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 960 Q 220 948 400 960 T 750 960" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 982 Q 220 970 400 982 T 750 982" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 1004 Q 220 992 400 1004 T 750 1004" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 1026 Q 220 1014 400 1026 T 750 1026" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 1048 Q 220 1036 400 1048 T 750 1048" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /><path d="M 50 1070 Q 220 1058 400 1070 T 750 1070" fill="none" stroke="#CBB494" stroke-width="0.25" opacity="0.15" /></g>
+
+  <!-- Left Ornamental Border -->
+  <rect x="0" y="0" width="46" height="1130" fill="#F4EDE0" />
+  <rect x="44" y="0" width="3" height="1130" fill="url(#borderWood)" />
+  <g>
+    <path d="M 6 6 C 18 -1, 32 18, 42 6 C 32 13, 18 -6, 6 6" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 12 C 16 20, 28 2, 44 12" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="13" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 13)">BNSP</text>
+  
+    <path d="M 6 18 C 18 11, 32 30, 42 18 C 32 25, 18 6, 6 18" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 24 C 16 32, 28 14, 44 24" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="25" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 25)">BNSP</text>
+  
+    <path d="M 6 30 C 18 23, 32 42, 42 30 C 32 37, 18 18, 6 30" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 36 C 16 44, 28 26, 44 36" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="37" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 37)">BNSP</text>
+  
+    <path d="M 6 42 C 18 35, 32 54, 42 42 C 32 49, 18 30, 6 42" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 48 C 16 56, 28 38, 44 48" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="49" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 49)">BNSP</text>
+  
+    <path d="M 6 54 C 18 47, 32 66, 42 54 C 32 61, 18 42, 6 54" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 60 C 16 68, 28 50, 44 60" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="61" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 61)">BNSP</text>
+  
+    <path d="M 6 66 C 18 59, 32 78, 42 66 C 32 73, 18 54, 6 66" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 72 C 16 80, 28 62, 44 72" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="73" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 73)">BNSP</text>
+  
+    <path d="M 6 78 C 18 71, 32 90, 42 78 C 32 85, 18 66, 6 78" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 84 C 16 92, 28 74, 44 84" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="85" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 85)">BNSP</text>
+  
+    <path d="M 6 90 C 18 83, 32 102, 42 90 C 32 97, 18 78, 6 90" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 96 C 16 104, 28 86, 44 96" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="97" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 97)">BNSP</text>
+  
+    <path d="M 6 102 C 18 95, 32 114, 42 102 C 32 109, 18 90, 6 102" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 108 C 16 116, 28 98, 44 108" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="109" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 109)">BNSP</text>
+  
+    <path d="M 6 114 C 18 107, 32 126, 42 114 C 32 121, 18 102, 6 114" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 120 C 16 128, 28 110, 44 120" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="121" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 121)">BNSP</text>
+  
+    <path d="M 6 126 C 18 119, 32 138, 42 126 C 32 133, 18 114, 6 126" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 132 C 16 140, 28 122, 44 132" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="133" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 133)">BNSP</text>
+  
+    <path d="M 6 138 C 18 131, 32 150, 42 138 C 32 145, 18 126, 6 138" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 144 C 16 152, 28 134, 44 144" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="145" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 145)">BNSP</text>
+  
+    <path d="M 6 150 C 18 143, 32 162, 42 150 C 32 157, 18 138, 6 150" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 156 C 16 164, 28 146, 44 156" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="157" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 157)">BNSP</text>
+  
+    <path d="M 6 162 C 18 155, 32 174, 42 162 C 32 169, 18 150, 6 162" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 168 C 16 176, 28 158, 44 168" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="169" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 169)">BNSP</text>
+  
+    <path d="M 6 174 C 18 167, 32 186, 42 174 C 32 181, 18 162, 6 174" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 180 C 16 188, 28 170, 44 180" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="181" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 181)">BNSP</text>
+  
+    <path d="M 6 186 C 18 179, 32 198, 42 186 C 32 193, 18 174, 6 186" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 192 C 16 200, 28 182, 44 192" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="193" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 193)">BNSP</text>
+  
+    <path d="M 6 198 C 18 191, 32 210, 42 198 C 32 205, 18 186, 6 198" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 204 C 16 212, 28 194, 44 204" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="205" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 205)">BNSP</text>
+  
+    <path d="M 6 210 C 18 203, 32 222, 42 210 C 32 217, 18 198, 6 210" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 216 C 16 224, 28 206, 44 216" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="217" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 217)">BNSP</text>
+  
+    <path d="M 6 222 C 18 215, 32 234, 42 222 C 32 229, 18 210, 6 222" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 228 C 16 236, 28 218, 44 228" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="229" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 229)">BNSP</text>
+  
+    <path d="M 6 234 C 18 227, 32 246, 42 234 C 32 241, 18 222, 6 234" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 240 C 16 248, 28 230, 44 240" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="241" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 241)">BNSP</text>
+  
+    <path d="M 6 246 C 18 239, 32 258, 42 246 C 32 253, 18 234, 6 246" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 252 C 16 260, 28 242, 44 252" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="253" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 253)">BNSP</text>
+  
+    <path d="M 6 258 C 18 251, 32 270, 42 258 C 32 265, 18 246, 6 258" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 264 C 16 272, 28 254, 44 264" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="265" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 265)">BNSP</text>
+  
+    <path d="M 6 270 C 18 263, 32 282, 42 270 C 32 277, 18 258, 6 270" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 276 C 16 284, 28 266, 44 276" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="277" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 277)">BNSP</text>
+  
+    <path d="M 6 282 C 18 275, 32 294, 42 282 C 32 289, 18 270, 6 282" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 288 C 16 296, 28 278, 44 288" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="289" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 289)">BNSP</text>
+  
+    <path d="M 6 294 C 18 287, 32 306, 42 294 C 32 301, 18 282, 6 294" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 300 C 16 308, 28 290, 44 300" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="301" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 301)">BNSP</text>
+  
+    <path d="M 6 306 C 18 299, 32 318, 42 306 C 32 313, 18 294, 6 306" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 312 C 16 320, 28 302, 44 312" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="313" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 313)">BNSP</text>
+  
+    <path d="M 6 318 C 18 311, 32 330, 42 318 C 32 325, 18 306, 6 318" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 324 C 16 332, 28 314, 44 324" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="325" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 325)">BNSP</text>
+  
+    <path d="M 6 330 C 18 323, 32 342, 42 330 C 32 337, 18 318, 6 330" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 336 C 16 344, 28 326, 44 336" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="337" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 337)">BNSP</text>
+  
+    <path d="M 6 342 C 18 335, 32 354, 42 342 C 32 349, 18 330, 6 342" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 348 C 16 356, 28 338, 44 348" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="349" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 349)">BNSP</text>
+  
+    <path d="M 6 354 C 18 347, 32 366, 42 354 C 32 361, 18 342, 6 354" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 360 C 16 368, 28 350, 44 360" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="361" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 361)">BNSP</text>
+  
+    <path d="M 6 366 C 18 359, 32 378, 42 366 C 32 373, 18 354, 6 366" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 372 C 16 380, 28 362, 44 372" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="373" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 373)">BNSP</text>
+  
+    <path d="M 6 378 C 18 371, 32 390, 42 378 C 32 385, 18 366, 6 378" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 384 C 16 392, 28 374, 44 384" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="385" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 385)">BNSP</text>
+  
+    <path d="M 6 390 C 18 383, 32 402, 42 390 C 32 397, 18 378, 6 390" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 396 C 16 404, 28 386, 44 396" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="397" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 397)">BNSP</text>
+  
+    <path d="M 6 402 C 18 395, 32 414, 42 402 C 32 409, 18 390, 6 402" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 408 C 16 416, 28 398, 44 408" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="409" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 409)">BNSP</text>
+  
+    <path d="M 6 414 C 18 407, 32 426, 42 414 C 32 421, 18 402, 6 414" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 420 C 16 428, 28 410, 44 420" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="421" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 421)">BNSP</text>
+  
+    <path d="M 6 426 C 18 419, 32 438, 42 426 C 32 433, 18 414, 6 426" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 432 C 16 440, 28 422, 44 432" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="433" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 433)">BNSP</text>
+  
+    <path d="M 6 438 C 18 431, 32 450, 42 438 C 32 445, 18 426, 6 438" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 444 C 16 452, 28 434, 44 444" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="445" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 445)">BNSP</text>
+  
+    <path d="M 6 450 C 18 443, 32 462, 42 450 C 32 457, 18 438, 6 450" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 456 C 16 464, 28 446, 44 456" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="457" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 457)">BNSP</text>
+  
+    <path d="M 6 462 C 18 455, 32 474, 42 462 C 32 469, 18 450, 6 462" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 468 C 16 476, 28 458, 44 468" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="469" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 469)">BNSP</text>
+  
+    <path d="M 6 474 C 18 467, 32 486, 42 474 C 32 481, 18 462, 6 474" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 480 C 16 488, 28 470, 44 480" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="481" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 481)">BNSP</text>
+  
+    <path d="M 6 486 C 18 479, 32 498, 42 486 C 32 493, 18 474, 6 486" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 492 C 16 500, 28 482, 44 492" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="493" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 493)">BNSP</text>
+  
+    <path d="M 6 498 C 18 491, 32 510, 42 498 C 32 505, 18 486, 6 498" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 504 C 16 512, 28 494, 44 504" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="505" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 505)">BNSP</text>
+  
+    <path d="M 6 510 C 18 503, 32 522, 42 510 C 32 517, 18 498, 6 510" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 516 C 16 524, 28 506, 44 516" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="517" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 517)">BNSP</text>
+  
+    <path d="M 6 522 C 18 515, 32 534, 42 522 C 32 529, 18 510, 6 522" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 528 C 16 536, 28 518, 44 528" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="529" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 529)">BNSP</text>
+  
+    <path d="M 6 534 C 18 527, 32 546, 42 534 C 32 541, 18 522, 6 534" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 540 C 16 548, 28 530, 44 540" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="541" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 541)">BNSP</text>
+  
+    <path d="M 6 546 C 18 539, 32 558, 42 546 C 32 553, 18 534, 6 546" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 552 C 16 560, 28 542, 44 552" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="553" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 553)">BNSP</text>
+  
+    <path d="M 6 558 C 18 551, 32 570, 42 558 C 32 565, 18 546, 6 558" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 564 C 16 572, 28 554, 44 564" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="565" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 565)">BNSP</text>
+  
+    <path d="M 6 570 C 18 563, 32 582, 42 570 C 32 577, 18 558, 6 570" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 576 C 16 584, 28 566, 44 576" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="577" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 577)">BNSP</text>
+  
+    <path d="M 6 582 C 18 575, 32 594, 42 582 C 32 589, 18 570, 6 582" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 588 C 16 596, 28 578, 44 588" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="589" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 589)">BNSP</text>
+  
+    <path d="M 6 594 C 18 587, 32 606, 42 594 C 32 601, 18 582, 6 594" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 600 C 16 608, 28 590, 44 600" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="601" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 601)">BNSP</text>
+  
+    <path d="M 6 606 C 18 599, 32 618, 42 606 C 32 613, 18 594, 6 606" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 612 C 16 620, 28 602, 44 612" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="613" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 613)">BNSP</text>
+  
+    <path d="M 6 618 C 18 611, 32 630, 42 618 C 32 625, 18 606, 6 618" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 624 C 16 632, 28 614, 44 624" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="625" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 625)">BNSP</text>
+  
+    <path d="M 6 630 C 18 623, 32 642, 42 630 C 32 637, 18 618, 6 630" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 636 C 16 644, 28 626, 44 636" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="637" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 637)">BNSP</text>
+  
+    <path d="M 6 642 C 18 635, 32 654, 42 642 C 32 649, 18 630, 6 642" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 648 C 16 656, 28 638, 44 648" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="649" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 649)">BNSP</text>
+  
+    <path d="M 6 654 C 18 647, 32 666, 42 654 C 32 661, 18 642, 6 654" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 660 C 16 668, 28 650, 44 660" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="661" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 661)">BNSP</text>
+  
+    <path d="M 6 666 C 18 659, 32 678, 42 666 C 32 673, 18 654, 6 666" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 672 C 16 680, 28 662, 44 672" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="673" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 673)">BNSP</text>
+  
+    <path d="M 6 678 C 18 671, 32 690, 42 678 C 32 685, 18 666, 6 678" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 684 C 16 692, 28 674, 44 684" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="685" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 685)">BNSP</text>
+  
+    <path d="M 6 690 C 18 683, 32 702, 42 690 C 32 697, 18 678, 6 690" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 696 C 16 704, 28 686, 44 696" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="697" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 697)">BNSP</text>
+  
+    <path d="M 6 702 C 18 695, 32 714, 42 702 C 32 709, 18 690, 6 702" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 708 C 16 716, 28 698, 44 708" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="709" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 709)">BNSP</text>
+  
+    <path d="M 6 714 C 18 707, 32 726, 42 714 C 32 721, 18 702, 6 714" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 720 C 16 728, 28 710, 44 720" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="721" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 721)">BNSP</text>
+  
+    <path d="M 6 726 C 18 719, 32 738, 42 726 C 32 733, 18 714, 6 726" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 732 C 16 740, 28 722, 44 732" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="733" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 733)">BNSP</text>
+  
+    <path d="M 6 738 C 18 731, 32 750, 42 738 C 32 745, 18 726, 6 738" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 744 C 16 752, 28 734, 44 744" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="745" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 745)">BNSP</text>
+  
+    <path d="M 6 750 C 18 743, 32 762, 42 750 C 32 757, 18 738, 6 750" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 756 C 16 764, 28 746, 44 756" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="757" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 757)">BNSP</text>
+  
+    <path d="M 6 762 C 18 755, 32 774, 42 762 C 32 769, 18 750, 6 762" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 768 C 16 776, 28 758, 44 768" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="769" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 769)">BNSP</text>
+  
+    <path d="M 6 774 C 18 767, 32 786, 42 774 C 32 781, 18 762, 6 774" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 780 C 16 788, 28 770, 44 780" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="781" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 781)">BNSP</text>
+  
+    <path d="M 6 786 C 18 779, 32 798, 42 786 C 32 793, 18 774, 6 786" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 792 C 16 800, 28 782, 44 792" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="793" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 793)">BNSP</text>
+  
+    <path d="M 6 798 C 18 791, 32 810, 42 798 C 32 805, 18 786, 6 798" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 804 C 16 812, 28 794, 44 804" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="805" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 805)">BNSP</text>
+  
+    <path d="M 6 810 C 18 803, 32 822, 42 810 C 32 817, 18 798, 6 810" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 816 C 16 824, 28 806, 44 816" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="817" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 817)">BNSP</text>
+  
+    <path d="M 6 822 C 18 815, 32 834, 42 822 C 32 829, 18 810, 6 822" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 828 C 16 836, 28 818, 44 828" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="829" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 829)">BNSP</text>
+  
+    <path d="M 6 834 C 18 827, 32 846, 42 834 C 32 841, 18 822, 6 834" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 840 C 16 848, 28 830, 44 840" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="841" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 841)">BNSP</text>
+  
+    <path d="M 6 846 C 18 839, 32 858, 42 846 C 32 853, 18 834, 6 846" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 852 C 16 860, 28 842, 44 852" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="853" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 853)">BNSP</text>
+  
+    <path d="M 6 858 C 18 851, 32 870, 42 858 C 32 865, 18 846, 6 858" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 864 C 16 872, 28 854, 44 864" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="865" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 865)">BNSP</text>
+  
+    <path d="M 6 870 C 18 863, 32 882, 42 870 C 32 877, 18 858, 6 870" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 876 C 16 884, 28 866, 44 876" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="877" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 877)">BNSP</text>
+  
+    <path d="M 6 882 C 18 875, 32 894, 42 882 C 32 889, 18 870, 6 882" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 888 C 16 896, 28 878, 44 888" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="889" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 889)">BNSP</text>
+  
+    <path d="M 6 894 C 18 887, 32 906, 42 894 C 32 901, 18 882, 6 894" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 900 C 16 908, 28 890, 44 900" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="901" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 901)">BNSP</text>
+  
+    <path d="M 6 906 C 18 899, 32 918, 42 906 C 32 913, 18 894, 6 906" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 912 C 16 920, 28 902, 44 912" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="913" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 913)">BNSP</text>
+  
+    <path d="M 6 918 C 18 911, 32 930, 42 918 C 32 925, 18 906, 6 918" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 924 C 16 932, 28 914, 44 924" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="925" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 925)">BNSP</text>
+  
+    <path d="M 6 930 C 18 923, 32 942, 42 930 C 32 937, 18 918, 6 930" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 936 C 16 944, 28 926, 44 936" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="937" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 937)">BNSP</text>
+  
+    <path d="M 6 942 C 18 935, 32 954, 42 942 C 32 949, 18 930, 6 942" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 948 C 16 956, 28 938, 44 948" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="949" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 949)">BNSP</text>
+  
+    <path d="M 6 954 C 18 947, 32 966, 42 954 C 32 961, 18 942, 6 954" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 960 C 16 968, 28 950, 44 960" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="961" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 961)">BNSP</text>
+  
+    <path d="M 6 966 C 18 959, 32 978, 42 966 C 32 973, 18 954, 6 966" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 972 C 16 980, 28 962, 44 972" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="973" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 973)">BNSP</text>
+  
+    <path d="M 6 978 C 18 971, 32 990, 42 978 C 32 985, 18 966, 6 978" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 984 C 16 992, 28 974, 44 984" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="985" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 985)">BNSP</text>
+  
+    <path d="M 6 990 C 18 983, 32 1002, 42 990 C 32 997, 18 978, 6 990" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 996 C 16 1004, 28 986, 44 996" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="997" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 997)">BNSP</text>
+  
+    <path d="M 6 1002 C 18 995, 32 1014, 42 1002 C 32 1009, 18 990, 6 1002" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1008 C 16 1016, 28 998, 44 1008" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1009" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1009)">BNSP</text>
+  
+    <path d="M 6 1014 C 18 1007, 32 1026, 42 1014 C 32 1021, 18 1002, 6 1014" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1020 C 16 1028, 28 1010, 44 1020" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1021" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1021)">BNSP</text>
+  
+    <path d="M 6 1026 C 18 1019, 32 1038, 42 1026 C 32 1033, 18 1014, 6 1026" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1032 C 16 1040, 28 1022, 44 1032" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1033" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1033)">BNSP</text>
+  
+    <path d="M 6 1038 C 18 1031, 32 1050, 42 1038 C 32 1045, 18 1026, 6 1038" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1044 C 16 1052, 28 1034, 44 1044" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1045" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1045)">BNSP</text>
+  
+    <path d="M 6 1050 C 18 1043, 32 1062, 42 1050 C 32 1057, 18 1038, 6 1050" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1056 C 16 1064, 28 1046, 44 1056" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1057" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1057)">BNSP</text>
+  
+    <path d="M 6 1062 C 18 1055, 32 1074, 42 1062 C 32 1069, 18 1050, 6 1062" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1068 C 16 1076, 28 1058, 44 1068" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1069" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1069)">BNSP</text>
+  
+    <path d="M 6 1074 C 18 1067, 32 1086, 42 1074 C 32 1081, 18 1062, 6 1074" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1080 C 16 1088, 28 1070, 44 1080" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1081" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1081)">BNSP</text>
+  
+    <path d="M 6 1086 C 18 1079, 32 1098, 42 1086 C 32 1093, 18 1074, 6 1086" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1092 C 16 1100, 28 1082, 44 1092" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1093" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1093)">BNSP</text>
+  
+    <path d="M 6 1098 C 18 1091, 32 1110, 42 1098 C 32 1105, 18 1086, 6 1098" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1104 C 16 1112, 28 1094, 44 1104" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1105" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1105)">BNSP</text>
+  
+    <path d="M 6 1110 C 18 1103, 32 1122, 42 1110 C 32 1117, 18 1098, 6 1110" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1116 C 16 1124, 28 1106, 44 1116" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1117" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1117)">BNSP</text>
+  
+    <path d="M 6 1122 C 18 1115, 32 1134, 42 1122 C 32 1129, 18 1110, 6 1122" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 2 1128 C 16 1136, 28 1118, 44 1128" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="24" y="1129" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(-90 24 1129)">BNSP</text>
+  </g>
+
+  <!-- Right Ornamental Border -->
+  <rect x="754" y="0" width="46" height="1130" fill="#F4EDE0" />
+  <rect x="753" y="0" width="3" height="1130" fill="url(#borderWood)" />
+  <g>
+    <path d="M 794 6 C 782 -1, 768 18, 758 6 C 768 13, 782 -6, 794 6" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 12 C 784 20, 772 2, 756 12" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="13" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 13)">BNSP</text>
+  
+    <path d="M 794 18 C 782 11, 768 30, 758 18 C 768 25, 782 6, 794 18" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 24 C 784 32, 772 14, 756 24" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="25" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 25)">BNSP</text>
+  
+    <path d="M 794 30 C 782 23, 768 42, 758 30 C 768 37, 782 18, 794 30" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 36 C 784 44, 772 26, 756 36" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="37" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 37)">BNSP</text>
+  
+    <path d="M 794 42 C 782 35, 768 54, 758 42 C 768 49, 782 30, 794 42" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 48 C 784 56, 772 38, 756 48" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="49" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 49)">BNSP</text>
+  
+    <path d="M 794 54 C 782 47, 768 66, 758 54 C 768 61, 782 42, 794 54" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 60 C 784 68, 772 50, 756 60" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="61" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 61)">BNSP</text>
+  
+    <path d="M 794 66 C 782 59, 768 78, 758 66 C 768 73, 782 54, 794 66" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 72 C 784 80, 772 62, 756 72" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="73" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 73)">BNSP</text>
+  
+    <path d="M 794 78 C 782 71, 768 90, 758 78 C 768 85, 782 66, 794 78" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 84 C 784 92, 772 74, 756 84" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="85" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 85)">BNSP</text>
+  
+    <path d="M 794 90 C 782 83, 768 102, 758 90 C 768 97, 782 78, 794 90" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 96 C 784 104, 772 86, 756 96" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="97" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 97)">BNSP</text>
+  
+    <path d="M 794 102 C 782 95, 768 114, 758 102 C 768 109, 782 90, 794 102" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 108 C 784 116, 772 98, 756 108" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="109" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 109)">BNSP</text>
+  
+    <path d="M 794 114 C 782 107, 768 126, 758 114 C 768 121, 782 102, 794 114" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 120 C 784 128, 772 110, 756 120" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="121" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 121)">BNSP</text>
+  
+    <path d="M 794 126 C 782 119, 768 138, 758 126 C 768 133, 782 114, 794 126" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 132 C 784 140, 772 122, 756 132" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="133" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 133)">BNSP</text>
+  
+    <path d="M 794 138 C 782 131, 768 150, 758 138 C 768 145, 782 126, 794 138" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 144 C 784 152, 772 134, 756 144" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="145" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 145)">BNSP</text>
+  
+    <path d="M 794 150 C 782 143, 768 162, 758 150 C 768 157, 782 138, 794 150" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 156 C 784 164, 772 146, 756 156" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="157" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 157)">BNSP</text>
+  
+    <path d="M 794 162 C 782 155, 768 174, 758 162 C 768 169, 782 150, 794 162" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 168 C 784 176, 772 158, 756 168" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="169" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 169)">BNSP</text>
+  
+    <path d="M 794 174 C 782 167, 768 186, 758 174 C 768 181, 782 162, 794 174" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 180 C 784 188, 772 170, 756 180" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="181" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 181)">BNSP</text>
+  
+    <path d="M 794 186 C 782 179, 768 198, 758 186 C 768 193, 782 174, 794 186" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 192 C 784 200, 772 182, 756 192" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="193" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 193)">BNSP</text>
+  
+    <path d="M 794 198 C 782 191, 768 210, 758 198 C 768 205, 782 186, 794 198" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 204 C 784 212, 772 194, 756 204" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="205" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 205)">BNSP</text>
+  
+    <path d="M 794 210 C 782 203, 768 222, 758 210 C 768 217, 782 198, 794 210" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 216 C 784 224, 772 206, 756 216" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="217" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 217)">BNSP</text>
+  
+    <path d="M 794 222 C 782 215, 768 234, 758 222 C 768 229, 782 210, 794 222" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 228 C 784 236, 772 218, 756 228" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="229" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 229)">BNSP</text>
+  
+    <path d="M 794 234 C 782 227, 768 246, 758 234 C 768 241, 782 222, 794 234" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 240 C 784 248, 772 230, 756 240" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="241" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 241)">BNSP</text>
+  
+    <path d="M 794 246 C 782 239, 768 258, 758 246 C 768 253, 782 234, 794 246" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 252 C 784 260, 772 242, 756 252" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="253" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 253)">BNSP</text>
+  
+    <path d="M 794 258 C 782 251, 768 270, 758 258 C 768 265, 782 246, 794 258" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 264 C 784 272, 772 254, 756 264" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="265" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 265)">BNSP</text>
+  
+    <path d="M 794 270 C 782 263, 768 282, 758 270 C 768 277, 782 258, 794 270" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 276 C 784 284, 772 266, 756 276" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="277" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 277)">BNSP</text>
+  
+    <path d="M 794 282 C 782 275, 768 294, 758 282 C 768 289, 782 270, 794 282" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 288 C 784 296, 772 278, 756 288" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="289" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 289)">BNSP</text>
+  
+    <path d="M 794 294 C 782 287, 768 306, 758 294 C 768 301, 782 282, 794 294" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 300 C 784 308, 772 290, 756 300" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="301" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 301)">BNSP</text>
+  
+    <path d="M 794 306 C 782 299, 768 318, 758 306 C 768 313, 782 294, 794 306" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 312 C 784 320, 772 302, 756 312" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="313" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 313)">BNSP</text>
+  
+    <path d="M 794 318 C 782 311, 768 330, 758 318 C 768 325, 782 306, 794 318" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 324 C 784 332, 772 314, 756 324" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="325" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 325)">BNSP</text>
+  
+    <path d="M 794 330 C 782 323, 768 342, 758 330 C 768 337, 782 318, 794 330" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 336 C 784 344, 772 326, 756 336" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="337" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 337)">BNSP</text>
+  
+    <path d="M 794 342 C 782 335, 768 354, 758 342 C 768 349, 782 330, 794 342" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 348 C 784 356, 772 338, 756 348" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="349" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 349)">BNSP</text>
+  
+    <path d="M 794 354 C 782 347, 768 366, 758 354 C 768 361, 782 342, 794 354" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 360 C 784 368, 772 350, 756 360" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="361" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 361)">BNSP</text>
+  
+    <path d="M 794 366 C 782 359, 768 378, 758 366 C 768 373, 782 354, 794 366" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 372 C 784 380, 772 362, 756 372" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="373" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 373)">BNSP</text>
+  
+    <path d="M 794 378 C 782 371, 768 390, 758 378 C 768 385, 782 366, 794 378" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 384 C 784 392, 772 374, 756 384" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="385" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 385)">BNSP</text>
+  
+    <path d="M 794 390 C 782 383, 768 402, 758 390 C 768 397, 782 378, 794 390" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 396 C 784 404, 772 386, 756 396" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="397" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 397)">BNSP</text>
+  
+    <path d="M 794 402 C 782 395, 768 414, 758 402 C 768 409, 782 390, 794 402" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 408 C 784 416, 772 398, 756 408" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="409" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 409)">BNSP</text>
+  
+    <path d="M 794 414 C 782 407, 768 426, 758 414 C 768 421, 782 402, 794 414" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 420 C 784 428, 772 410, 756 420" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="421" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 421)">BNSP</text>
+  
+    <path d="M 794 426 C 782 419, 768 438, 758 426 C 768 433, 782 414, 794 426" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 432 C 784 440, 772 422, 756 432" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="433" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 433)">BNSP</text>
+  
+    <path d="M 794 438 C 782 431, 768 450, 758 438 C 768 445, 782 426, 794 438" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 444 C 784 452, 772 434, 756 444" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="445" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 445)">BNSP</text>
+  
+    <path d="M 794 450 C 782 443, 768 462, 758 450 C 768 457, 782 438, 794 450" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 456 C 784 464, 772 446, 756 456" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="457" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 457)">BNSP</text>
+  
+    <path d="M 794 462 C 782 455, 768 474, 758 462 C 768 469, 782 450, 794 462" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 468 C 784 476, 772 458, 756 468" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="469" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 469)">BNSP</text>
+  
+    <path d="M 794 474 C 782 467, 768 486, 758 474 C 768 481, 782 462, 794 474" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 480 C 784 488, 772 470, 756 480" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="481" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 481)">BNSP</text>
+  
+    <path d="M 794 486 C 782 479, 768 498, 758 486 C 768 493, 782 474, 794 486" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 492 C 784 500, 772 482, 756 492" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="493" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 493)">BNSP</text>
+  
+    <path d="M 794 498 C 782 491, 768 510, 758 498 C 768 505, 782 486, 794 498" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 504 C 784 512, 772 494, 756 504" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="505" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 505)">BNSP</text>
+  
+    <path d="M 794 510 C 782 503, 768 522, 758 510 C 768 517, 782 498, 794 510" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 516 C 784 524, 772 506, 756 516" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="517" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 517)">BNSP</text>
+  
+    <path d="M 794 522 C 782 515, 768 534, 758 522 C 768 529, 782 510, 794 522" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 528 C 784 536, 772 518, 756 528" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="529" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 529)">BNSP</text>
+  
+    <path d="M 794 534 C 782 527, 768 546, 758 534 C 768 541, 782 522, 794 534" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 540 C 784 548, 772 530, 756 540" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="541" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 541)">BNSP</text>
+  
+    <path d="M 794 546 C 782 539, 768 558, 758 546 C 768 553, 782 534, 794 546" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 552 C 784 560, 772 542, 756 552" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="553" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 553)">BNSP</text>
+  
+    <path d="M 794 558 C 782 551, 768 570, 758 558 C 768 565, 782 546, 794 558" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 564 C 784 572, 772 554, 756 564" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="565" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 565)">BNSP</text>
+  
+    <path d="M 794 570 C 782 563, 768 582, 758 570 C 768 577, 782 558, 794 570" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 576 C 784 584, 772 566, 756 576" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="577" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 577)">BNSP</text>
+  
+    <path d="M 794 582 C 782 575, 768 594, 758 582 C 768 589, 782 570, 794 582" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 588 C 784 596, 772 578, 756 588" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="589" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 589)">BNSP</text>
+  
+    <path d="M 794 594 C 782 587, 768 606, 758 594 C 768 601, 782 582, 794 594" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 600 C 784 608, 772 590, 756 600" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="601" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 601)">BNSP</text>
+  
+    <path d="M 794 606 C 782 599, 768 618, 758 606 C 768 613, 782 594, 794 606" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 612 C 784 620, 772 602, 756 612" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="613" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 613)">BNSP</text>
+  
+    <path d="M 794 618 C 782 611, 768 630, 758 618 C 768 625, 782 606, 794 618" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 624 C 784 632, 772 614, 756 624" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="625" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 625)">BNSP</text>
+  
+    <path d="M 794 630 C 782 623, 768 642, 758 630 C 768 637, 782 618, 794 630" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 636 C 784 644, 772 626, 756 636" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="637" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 637)">BNSP</text>
+  
+    <path d="M 794 642 C 782 635, 768 654, 758 642 C 768 649, 782 630, 794 642" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 648 C 784 656, 772 638, 756 648" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="649" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 649)">BNSP</text>
+  
+    <path d="M 794 654 C 782 647, 768 666, 758 654 C 768 661, 782 642, 794 654" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 660 C 784 668, 772 650, 756 660" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="661" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 661)">BNSP</text>
+  
+    <path d="M 794 666 C 782 659, 768 678, 758 666 C 768 673, 782 654, 794 666" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 672 C 784 680, 772 662, 756 672" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="673" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 673)">BNSP</text>
+  
+    <path d="M 794 678 C 782 671, 768 690, 758 678 C 768 685, 782 666, 794 678" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 684 C 784 692, 772 674, 756 684" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="685" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 685)">BNSP</text>
+  
+    <path d="M 794 690 C 782 683, 768 702, 758 690 C 768 697, 782 678, 794 690" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 696 C 784 704, 772 686, 756 696" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="697" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 697)">BNSP</text>
+  
+    <path d="M 794 702 C 782 695, 768 714, 758 702 C 768 709, 782 690, 794 702" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 708 C 784 716, 772 698, 756 708" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="709" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 709)">BNSP</text>
+  
+    <path d="M 794 714 C 782 707, 768 726, 758 714 C 768 721, 782 702, 794 714" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 720 C 784 728, 772 710, 756 720" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="721" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 721)">BNSP</text>
+  
+    <path d="M 794 726 C 782 719, 768 738, 758 726 C 768 733, 782 714, 794 726" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 732 C 784 740, 772 722, 756 732" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="733" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 733)">BNSP</text>
+  
+    <path d="M 794 738 C 782 731, 768 750, 758 738 C 768 745, 782 726, 794 738" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 744 C 784 752, 772 734, 756 744" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="745" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 745)">BNSP</text>
+  
+    <path d="M 794 750 C 782 743, 768 762, 758 750 C 768 757, 782 738, 794 750" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 756 C 784 764, 772 746, 756 756" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="757" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 757)">BNSP</text>
+  
+    <path d="M 794 762 C 782 755, 768 774, 758 762 C 768 769, 782 750, 794 762" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 768 C 784 776, 772 758, 756 768" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="769" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 769)">BNSP</text>
+  
+    <path d="M 794 774 C 782 767, 768 786, 758 774 C 768 781, 782 762, 794 774" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 780 C 784 788, 772 770, 756 780" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="781" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 781)">BNSP</text>
+  
+    <path d="M 794 786 C 782 779, 768 798, 758 786 C 768 793, 782 774, 794 786" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 792 C 784 800, 772 782, 756 792" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="793" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 793)">BNSP</text>
+  
+    <path d="M 794 798 C 782 791, 768 810, 758 798 C 768 805, 782 786, 794 798" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 804 C 784 812, 772 794, 756 804" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="805" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 805)">BNSP</text>
+  
+    <path d="M 794 810 C 782 803, 768 822, 758 810 C 768 817, 782 798, 794 810" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 816 C 784 824, 772 806, 756 816" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="817" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 817)">BNSP</text>
+  
+    <path d="M 794 822 C 782 815, 768 834, 758 822 C 768 829, 782 810, 794 822" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 828 C 784 836, 772 818, 756 828" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="829" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 829)">BNSP</text>
+  
+    <path d="M 794 834 C 782 827, 768 846, 758 834 C 768 841, 782 822, 794 834" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 840 C 784 848, 772 830, 756 840" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="841" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 841)">BNSP</text>
+  
+    <path d="M 794 846 C 782 839, 768 858, 758 846 C 768 853, 782 834, 794 846" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 852 C 784 860, 772 842, 756 852" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="853" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 853)">BNSP</text>
+  
+    <path d="M 794 858 C 782 851, 768 870, 758 858 C 768 865, 782 846, 794 858" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 864 C 784 872, 772 854, 756 864" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="865" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 865)">BNSP</text>
+  
+    <path d="M 794 870 C 782 863, 768 882, 758 870 C 768 877, 782 858, 794 870" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 876 C 784 884, 772 866, 756 876" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="877" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 877)">BNSP</text>
+  
+    <path d="M 794 882 C 782 875, 768 894, 758 882 C 768 889, 782 870, 794 882" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 888 C 784 896, 772 878, 756 888" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="889" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 889)">BNSP</text>
+  
+    <path d="M 794 894 C 782 887, 768 906, 758 894 C 768 901, 782 882, 794 894" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 900 C 784 908, 772 890, 756 900" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="901" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 901)">BNSP</text>
+  
+    <path d="M 794 906 C 782 899, 768 918, 758 906 C 768 913, 782 894, 794 906" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 912 C 784 920, 772 902, 756 912" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="913" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 913)">BNSP</text>
+  
+    <path d="M 794 918 C 782 911, 768 930, 758 918 C 768 925, 782 906, 794 918" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 924 C 784 932, 772 914, 756 924" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="925" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 925)">BNSP</text>
+  
+    <path d="M 794 930 C 782 923, 768 942, 758 930 C 768 937, 782 918, 794 930" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 936 C 784 944, 772 926, 756 936" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="937" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 937)">BNSP</text>
+  
+    <path d="M 794 942 C 782 935, 768 954, 758 942 C 768 949, 782 930, 794 942" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 948 C 784 956, 772 938, 756 948" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="949" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 949)">BNSP</text>
+  
+    <path d="M 794 954 C 782 947, 768 966, 758 954 C 768 961, 782 942, 794 954" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 960 C 784 968, 772 950, 756 960" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="961" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 961)">BNSP</text>
+  
+    <path d="M 794 966 C 782 959, 768 978, 758 966 C 768 973, 782 954, 794 966" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 972 C 784 980, 772 962, 756 972" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="973" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 973)">BNSP</text>
+  
+    <path d="M 794 978 C 782 971, 768 990, 758 978 C 768 985, 782 966, 794 978" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 984 C 784 992, 772 974, 756 984" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="985" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 985)">BNSP</text>
+  
+    <path d="M 794 990 C 782 983, 768 1002, 758 990 C 768 997, 782 978, 794 990" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 996 C 784 1004, 772 986, 756 996" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="997" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 997)">BNSP</text>
+  
+    <path d="M 794 1002 C 782 995, 768 1014, 758 1002 C 768 1009, 782 990, 794 1002" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1008 C 784 1016, 772 998, 756 1008" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1009" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1009)">BNSP</text>
+  
+    <path d="M 794 1014 C 782 1007, 768 1026, 758 1014 C 768 1021, 782 1002, 794 1014" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1020 C 784 1028, 772 1010, 756 1020" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1021" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1021)">BNSP</text>
+  
+    <path d="M 794 1026 C 782 1019, 768 1038, 758 1026 C 768 1033, 782 1014, 794 1026" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1032 C 784 1040, 772 1022, 756 1032" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1033" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1033)">BNSP</text>
+  
+    <path d="M 794 1038 C 782 1031, 768 1050, 758 1038 C 768 1045, 782 1026, 794 1038" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1044 C 784 1052, 772 1034, 756 1044" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1045" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1045)">BNSP</text>
+  
+    <path d="M 794 1050 C 782 1043, 768 1062, 758 1050 C 768 1057, 782 1038, 794 1050" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1056 C 784 1064, 772 1046, 756 1056" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1057" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1057)">BNSP</text>
+  
+    <path d="M 794 1062 C 782 1055, 768 1074, 758 1062 C 768 1069, 782 1050, 794 1062" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1068 C 784 1076, 772 1058, 756 1068" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1069" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1069)">BNSP</text>
+  
+    <path d="M 794 1074 C 782 1067, 768 1086, 758 1074 C 768 1081, 782 1062, 794 1074" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1080 C 784 1088, 772 1070, 756 1080" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1081" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1081)">BNSP</text>
+  
+    <path d="M 794 1086 C 782 1079, 768 1098, 758 1086 C 768 1093, 782 1074, 794 1086" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1092 C 784 1100, 772 1082, 756 1092" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1093" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1093)">BNSP</text>
+  
+    <path d="M 794 1098 C 782 1091, 768 1110, 758 1098 C 768 1105, 782 1086, 794 1098" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1104 C 784 1112, 772 1094, 756 1104" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1105" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1105)">BNSP</text>
+  
+    <path d="M 794 1110 C 782 1103, 768 1122, 758 1110 C 768 1117, 782 1098, 794 1110" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1116 C 784 1124, 772 1106, 756 1116" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1117" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1117)">BNSP</text>
+  
+    <path d="M 794 1122 C 782 1115, 768 1134, 758 1122 C 768 1129, 782 1110, 794 1122" fill="none" stroke="#785028" stroke-width="0.75" opacity="0.65" />
+    <path d="M 798 1128 C 784 1136, 772 1118, 756 1128" fill="none" stroke="#4A2E12" stroke-width="0.5" opacity="0.55" />
+    <text x="776" y="1129" font-family="Arial, Helvetica, sans-serif" font-size="4.5" font-weight="900" fill="#6B4423" opacity="0.45" text-anchor="middle" transform="rotate(90 776 1129)">BNSP</text>
+  </g>
+
+  <!-- ==================== TOP CORNERS ==================== -->
+  <!-- Top Left: Serial Stamp (Exact 13562747) -->
+  <text x="56" y="46" font-family="'Courier New', Courier, monospace" font-size="28" font-weight="900" fill="#1E293B" letter-spacing="1.2">13562747</text>
+
+  <!-- Top Right: Barcode (Exact barcode block) -->
+  <g id="barcodeBlock">
+    <rect x="558.0" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="566.1" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="574.2" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="578.3" y="25" width="4.1" height="42" fill="#0A0F1D" /><rect x="583.7" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="590.4" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="595.8" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="602.6" y="25" width="4.1" height="42" fill="#0A0F1D" /><rect x="608.0" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="614.7" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="621.5" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="626.9" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="632.3" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="640.4" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="644.4" y="25" width="4.1" height="42" fill="#0A0F1D" /><rect x="653.9" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="657.9" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="662.0" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="671.4" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="675.5" y="25" width="4.1" height="42" fill="#0A0F1D" /><rect x="684.9" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="689.0" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="693.0" y="25" width="4.1" height="42" fill="#0A0F1D" /><rect x="702.5" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="706.5" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="713.3" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="720.0" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="725.4" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="732.2" y="25" width="4.1" height="42" fill="#0A0F1D" /><rect x="737.6" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="744.3" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="751.1" y="25" width="2.7" height="42" fill="#0A0F1D" /><rect x="756.5" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="761.9" y="25" width="5.4" height="42" fill="#0A0F1D" /><rect x="770.0" y="25" width="1.4" height="42" fill="#0A0F1D" /><rect x="774.0" y="25" width="4.1" height="42" fill="#0A0F1D" />
+  </g>
+
+  <!-- ==================== HEADER: GARUDA & AUTHORITY ==================== -->
+  <g transform="translate(400, 102)">
+    <use href="#garudaOfficial" transform="scale(1.2)" />
+  </g>
+
+  <!-- Authority Header Typography -->
+  <text x="400" y="174" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-size="12" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="2.2">BADAN NASIONAL</text>
+  <text x="400" y="190" font-family="'Arial Black', Arial, Helvetica, sans-serif" font-size="12" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="2.2">SERTIFIKASI PROFESI</text>
+  <text x="400" y="204" font-family="'Times New Roman', Times, serif" font-size="9.5" font-style="italic" font-weight="bold" fill="#334155" text-anchor="middle" letter-spacing="0.6">INDONESIAN PROFESSIONAL</text>
+  <text x="400" y="216" font-family="'Times New Roman', Times, serif" font-size="9.5" font-style="italic" font-weight="bold" fill="#334155" text-anchor="middle" letter-spacing="0.6">CERTIFICATION AUTHORITY</text>
+
+  <!-- ==================== CERTIFICATE TITLE ==================== -->
+  <text x="400" y="254" font-family="Georgia, 'Times New Roman', serif" font-size="27" font-weight="bold" fill="#1E3A8A" text-anchor="middle" letter-spacing="1.2">SERTIFIKAT KOMPETENSI</text>
+  <text x="400" y="278" font-family="Georgia, 'Times New Roman', serif" font-size="19.5" font-style="italic" font-weight="bold" fill="#1E3A8A" text-anchor="middle" letter-spacing="0.8">CERTIFICATE OF COMPETENCE</text>
+
+  <!-- Certificate Number -->
+  <text x="400" y="312" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#0F172A" text-anchor="middle">No. 61929 2166 3 0169986 2026</text>
+
+  <!-- ==================== DECLARATIVE STATEMENT ==================== -->
+  <text x="400" y="352" font-family="'Times New Roman', Times, serif" font-size="15.5" fill="#1E293B" text-anchor="middle">Dengan ini menyatakan bahwa,</text>
+  <text x="400" y="370" font-family="'Times New Roman', Times, serif" font-size="13.5" font-style="italic" fill="#475569" text-anchor="middle">This is to certify that,</text>
+
+  <!-- ==================== NAME OF HOLDER ==================== -->
+  <text x="400" y="420" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="0.4">Muhammad Raihan Firdaus</text>
+
+  <!-- Registration Number -->
+  <text x="400" y="458" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="bold" fill="#0F172A" text-anchor="middle">No. Reg. TIK 1565 54675 2026</text>
+
+  <!-- ==================== COMPETENCY FIELD ==================== -->
+  <text x="400" y="496" font-family="'Times New Roman', Times, serif" font-size="15.5" fill="#1E293B" text-anchor="middle">Telah kompeten pada bidang:</text>
+  <text x="400" y="514" font-family="'Times New Roman', Times, serif" font-size="13.5" font-style="italic" fill="#475569" text-anchor="middle">Is competent in the area of:</text>
+
+  <text x="400" y="556" font-family="Arial, Helvetica, sans-serif" font-size="19.5" font-weight="900" fill="#0F172A" text-anchor="middle">Pemasaran Digital</text>
+  <text x="400" y="578" font-family="Arial, Helvetica, sans-serif" font-size="17" font-style="italic" font-weight="bold" fill="#1E293B" text-anchor="middle">Digital Marketing</text>
+
+  <!-- ==================== QUALIFICATION ==================== -->
+  <text x="400" y="622" font-family="'Times New Roman', Times, serif" font-size="15.5" fill="#1E293B" text-anchor="middle">Dengan Kualifikasi / Kompetensi:</text>
+  <text x="400" y="640" font-family="'Times New Roman', Times, serif" font-size="13.5" font-style="italic" fill="#475569" text-anchor="middle">With Qualification / Competency:</text>
+
+  <text x="400" y="684" font-family="Arial, Helvetica, sans-serif" font-size="21.5" font-weight="900" fill="#0F172A" text-anchor="middle">Pembuat Konten</text>
+  <text x="400" y="708" font-family="Arial, Helvetica, sans-serif" font-size="18.5" font-style="italic" font-weight="bold" fill="#1E293B" text-anchor="middle">Content Creator</text>
+
+  <!-- ==================== VALIDITY ==================== -->
+  <text x="400" y="758" font-family="'Times New Roman', Times, serif" font-size="15" fill="#1E293B" text-anchor="middle">Sertifikat ini berlaku untuk: 3 (tiga) tahun</text>
+  <text x="400" y="776" font-family="'Times New Roman', Times, serif" font-size="13.5" font-style="italic" fill="#475569" text-anchor="middle">This certificate is valid for: 3 (three) years</text>
+
+  <!-- ==================== DATE & CERTIFICATION BODY ==================== -->
+  <text x="480" y="820" font-family="'Times New Roman', Times, serif" font-size="15.5" fill="#0F172A" text-anchor="middle">Yogyakarta, 11 April 2026</text>
+
+  <text x="480" y="844" font-family="'Times New Roman', Times, serif" font-size="15" fill="#1E293B" text-anchor="middle">Atas Nama Badan Nasional Sertifikasi Profesi</text>
+  <text x="480" y="860" font-family="'Times New Roman', Times, serif" font-size="13" font-style="italic" fill="#475569" text-anchor="middle">On Behalf of Indonesian Professional Certification Authority</text>
+
+  <text x="480" y="890" font-family="'Times New Roman', Times, serif" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle">Lembaga Sertifikasi Profesi Teknologi Digital</text>
+  <text x="480" y="908" font-family="'Times New Roman', Times, serif" font-size="13.5" font-style="italic" fill="#334155" text-anchor="middle">Professional Certification Body of Digital Technology</text>
+
+  <!-- ==================== BOTTOM SIGNATURE, LSP LOGO, HOLOGRAM ==================== -->
+  <!-- LSP Logo & Signature of Gunawan Ramli, M.Kom. -->
+  <g id="signatureArea" transform="translate(305, 960)">
+    <!-- LSP TEKNOLOGI DIGITAL Circular Gear Emblem -->
+    <g transform="translate(0, -12)">
+      <!-- Outer teal circular dashes -->
+      <circle cx="0" cy="0" r="32" fill="none" stroke="#0D9488" stroke-width="2.6" stroke-dasharray="7 3.5" />
+      <path d="M -16 -6 Q -4 -26 14 -14 Q 24 2 8 16" fill="none" stroke="#0D9488" stroke-width="3" />
+      <path d="M -10 6 Q 0 22 18 12" fill="none" stroke="#10B981" stroke-width="2.5" />
+      <text x="0" y="-4" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#0F766E" text-anchor="middle">LSP</text>
+      <text x="0" y="3" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="#0F766E" text-anchor="middle">TEKNOLOGI</text>
+      <text x="0" y="8" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="#0F766E" text-anchor="middle">DIGITAL</text>
+    </g>
+
+    <!-- Blue Wet Ink Authentic Signature -->
+    <g transform="translate(20, -5)">
+      <path d="M 0 -22 C 12 -42, 28 -8, 38 -26 C 46 -36, 52 -10, 64 -22 C 78 -10, 92 -34, 102 -16 Q 112 4 82 2 T 48 -2 C 68 12, 88 4, 112 8" fill="none" stroke="#1D4ED8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.92" />
+      <path d="M 18 -8 Q 62 -12 118 -4" fill="none" stroke="#1E40AF" stroke-width="2" stroke-linecap="round" opacity="0.88" />
+    </g>
+
+    <!-- Signatory Name and Title -->
+    <text x="80" y="14" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">Gunawan Ramli, M.Kom.</text>
+    <text x="80" y="32" font-family="'Times New Roman', Times, serif" font-size="13.5" font-style="italic" fill="#334155" text-anchor="middle">(Direktur / Director)</text>
+  </g>
+
+  <!-- BNSP Official Holographic Security Sticker (Exact 3D Gold/Rainbow Foil) -->
+  <g id="bnspFoilHologram" transform="translate(635, 955)">
+    <!-- Base Foil -->
+    <rect x="-70" y="-36" width="140" height="72" rx="4" fill="url(#holoShine)" stroke="#475569" stroke-width="1.2" opacity="0.95" />
+    <rect x="-66" y="-32" width="132" height="64" rx="3" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.8" />
+
+    <!-- Holographic Micro-Pattern Lines -->
+    <text x="0" y="-22" font-family="Arial, sans-serif" font-size="5" font-weight="bold" fill="#1E293B" opacity="0.45" text-anchor="middle" letter-spacing="0.5">BADAN NASIONAL SERTIFIKASI PROFESI</text>
+    <text x="0" y="26" font-family="Arial, sans-serif" font-size="4.8" font-weight="bold" fill="#1E293B" opacity="0.45" text-anchor="middle" letter-spacing="0.4">INDONESIAN PROFESSIONAL CERTIFICATION</text>
+
+    <!-- Mini Central Garuda Foil Watermark -->
+    <use href="#garudaOfficial" transform="translate(0, -6) scale(0.38)" opacity="0.4" />
+
+    <!-- 3D Hologram BNSP Text with Prismatic Depth -->
+    <text x="-1" y="8" font-family="'Arial Black', Impact, sans-serif" font-size="31" font-weight="900" fill="#0F172A" opacity="0.3" text-anchor="middle" letter-spacing="2">BNSP</text>
+    <text x="1" y="6" font-family="'Arial Black', Impact, sans-serif" font-size="31" font-weight="900" fill="#FFFFFF" opacity="0.75" text-anchor="middle" letter-spacing="2">BNSP</text>
+    <text x="0" y="7" font-family="'Arial Black', Impact, sans-serif" font-size="31" font-weight="900" fill="#1E293B" opacity="0.85" text-anchor="middle" letter-spacing="2">BNSP</text>
+  </g>
+
+</svg>

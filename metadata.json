@@ -1,0 +1,8 @@
+{
+  "name": "Muhammad Raihan Firdaus Portfolio",
+  "description": "Portfolio Muhammad Raihan Firdaus — Admin Assistant, Administrative Support, Social Media, dan BNSP Certified Content Creator dari Karawang, Jawa Barat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
